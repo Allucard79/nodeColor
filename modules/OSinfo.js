@@ -1,4 +1,5 @@
 const os = require('os');
+const colors = require('colors');
 const time = require('../modules/timeTransform.js');
 
 function getOSinfo() {
@@ -12,11 +13,11 @@ function getOSinfo() {
     const cpu = os.cpus()[0].model;
     const uptime = os.uptime();
     const userInfo = os.userInfo();
-    console.log('System:', type);
-    console.log('Release:', release);
-    console.log('CPU model:', cpu);
-    console.log('Uptime:', time.print());
-    console.log('User name:', userInfo.username);
+    console.log('System:'.grey, type);
+    console.log('Release:'.red, release);
+    console.log('CPU model:'.magenta, cpu);
+    console.log('Uptime:'.green, time.print());
+    console.log('User name:'.yellow, userInfo.username);
     console.log('Home dir:', userInfo.homedir);
 }
 

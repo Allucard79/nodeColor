@@ -1,13 +1,24 @@
 {
-  "name": "app",
+  "name": "nodecolor",
   "version": "1.0.0",
   "description": "",
-  "main": "program.js",
+  "main": "index.js",
+  "dependencies": {
+    "colors": "^1.3.3"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
 	"start": "node index.js"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Allucard79/nodeColor.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Allucard79/nodeColor/issues"
+  },
+  "homepage": "https://github.com/Allucard79/nodeColor#readme"
 }
